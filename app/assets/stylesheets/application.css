@@ -22,9 +22,19 @@
   100% { opacity: 1; }
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+html {
+    width: 100vw;
 }
 
 /* Body */
@@ -74,7 +84,7 @@ hr {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 45%;
+    max-width: 50%;
     height: auto;
     text-align: center;
 }
@@ -119,3 +129,21 @@ hr {
     animation: fadeIn 3s;
 }
 
+.fade-in-top {
+    animation: fadeInTop 3s;
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 0, 0);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0, 0);
+}
+
+.about-height {
+    height: 60vh;
+}
