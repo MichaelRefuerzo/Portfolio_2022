@@ -15,6 +15,25 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Body */
+body {
+  height: 100%;
+  background-color: #E0F4FD !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+    max-width: 1140px !important;
+}
 
 /* Navbar */
 .nav {
@@ -29,11 +48,6 @@
     color: #7C4FCF;
 }
 
-/* Container */
-.container {
- max-width: 50% !important;
-}
-
 /* Navbar right buttons */
 .nav-font-color {
     color: #578C9F !important;
@@ -41,33 +55,59 @@
 
 /* HR Line */
 hr {
-    border: 0;
-    border-top: 1px solid rgba(0,0,0,0.1);
     color: #578C9F !important;
 }
 
-/* Body */
-body {
-  height: 100%;
-  background-color: #E0F4FD !important;
+.div-home-column {
+    display: flex;
+    justify-content: center;
 }
 
 /* Center home body */
 .div-home {
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    max-width: 650px;
-    min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 45%;
+    height: auto;
     text-align: center;
 }
 
 /* Center web icon */
 .div-web-icon {
-  padding-top: 185px;
-  display: flex !important;
-  justify-content: center !important;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
 }
+
+/* Center Text */
+.div-center {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: white !important;
+}
+
+.div-home-buttons{
+    margin-top: 1rem;
+}
+
+.card-column-large {
+    padding-left: 1.5rem;
+    justify-content: center !important;
+}
+
+.card-column-image {
+    flex: 0 0 20%;
+}
+
+.education-card-column {
+    display: flex;
+    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+

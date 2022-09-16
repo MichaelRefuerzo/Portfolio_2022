@@ -8,14 +8,16 @@
   </head>
 
   <body>
-    <div class="div-home">
-      <%= image_tag "web-icon.png", width: 450, class: "mx-lg-auto div-web-icon" %>
-      <h1><span>Hi, I'm</span> <span style="color: #7C4FCF !important;">Chael</span></h1>
-        <p>I am a fresh graduate of <span style="color: #7C4FCF !important;">Bachelor of Science in Computer Science.</span> My hobbies are designing, playing video games, and learning web development.</p>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-      <div class="div mt-3">
-        <%= link_to "ABOUT CHAEL", about_path , :class => "btn btn-outline-dark" %>
-        <%= link_to "CONTACT", contact_path , :class => "btn btn-dark ms-2" %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <div class="div-home-column">
+      <%= image_tag "web-icon.png", class: "div-web-icon" %>
+      <div class="div-home">
+        <h1><span>Hi, I'm</span> <span style="color: #7C4FCF !important;">Chael</span></h1>
+          <p>I am a fresh graduate of <span style="color: #7C4FCF !important;">Bachelor of Science in Computer Science.</span> My hobbies are designing, playing video games, and learning web development.</p>
+        <div class="div-home-buttons">
+          <%= link_to "ABOUT CHAEL", about_path , :class => "btn btn-outline-dark" %>
+          <%= link_to "CONTACT", contact_path , :class => "btn btn-dark ms-2" %>
+        </div>
       </div>
     </div>
   </body>
