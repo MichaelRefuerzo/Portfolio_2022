@@ -34,20 +34,21 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto" style="font-size: 15px;">
             <li class="nav-item ms-4">
-              <a class=""><%= link_to "HOME", static_pages_home_path, :class => "nav-link" %></a>
+              <a class=""><%= link_to "HOME", static_pages_home_path, :class => "nav-link nav-font-color" %></a>
             </li>
             <li class="nav-item ms-4">
-              <a class=""><%= link_to "ABOUT", static_pages_about_path, :class => "nav-link" %></a>
+              <a class=""><%= link_to "ABOUT", static_pages_about_path, :class => "nav-link nav-font-color" %></a>
             </li>
             <li class="nav-item ms-4">
-              <a class=""><%= link_to "PORTFOLIO", static_pages_portfolio_path, :class => "nav-link" %></a>
+              <a class=""><%= link_to "PORTFOLIO", static_pages_portfolio_path, :class => "nav-link nav-font-color" %></a>
             </li>
             <li class="nav-item ms-4">
-              <a class=""><%= link_to "CONTACT", static_pages_contact_path, :class => "nav-link" %></a>
+              <a class=""><%= link_to "CONTACT", static_pages_contact_path, :class => "nav-link nav-font-color" %></a>
             </li>
           </ul>
         </div>
       </nav>
+      <hr>
       <%= yield %>
     </div>
   </div>

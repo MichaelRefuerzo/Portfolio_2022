@@ -16,17 +16,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+/* Navbar */
 .nav {
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: transparent;
 }
 
+/* Navbar logo */
 .nav-font-thin {
     font-family: 'Raleway', sans-serif;
+    color: #578C9F;
 }
 
-
+/* Container */
 .container {
    max-width: 50% !important;
+}
+
+/* Navbar right buttons */
+.nav-font-color {
+    color: #578C9F !important;
+}
+
+/* HR Line */
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    color: #578C9F !important;
+}
+
+/* Body */
+body {
+  height: 100%;
+  background-color: #E0F4FD !important;
+}
+
+/* Center home body */
+.div-home{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
