@@ -25,7 +25,7 @@
 @keyframes fadeInTop {
     from {
         opacity: 0;
-        transform: translate3d(30px, 0, 0);
+        transform: translate3d(0, 30px, 0);
     }
     to {
         opacity: 1;
@@ -105,15 +105,19 @@ hr {
     color: white !important;
 }
 
+/* Home button padding top */
 .div-home-buttons{
     margin-top: 1rem;
+    width: 140px;
 }
 
+/* center cards */
 .card-column-large {
     padding-left: 1.5rem;
     justify-content: center !important;
 }
 
+/* padding left for image */
 .card-column-image {
     flex: 0 0 20%;
 }
@@ -133,17 +137,43 @@ hr {
     animation: fadeInTop 3s;
 }
 
+/* fade in top */
 .tag {
   opacity: 0;
   transform: translate(0, 0, 0);
-  transition: all 1s;
+  transition: all 2.5s;
 }
 
+/* fade in top */
 .tag.visible {
   opacity: 1;
   transform: translate(0, 0, 0);
 }
 
+/* about page height */
 .about-height {
     height: 60vh;
+}
+
+.noselect {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.skills-icons {
+    list-style-type: none !important;
+    display: flex;
+    align-items: center !important;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 300px;
+    width: auto;
 }
