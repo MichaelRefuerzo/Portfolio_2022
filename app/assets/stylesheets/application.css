@@ -17,6 +17,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 html, body {
     max-width: 100%;
@@ -109,5 +113,9 @@ hr {
     justify-content: center !important;
     margin-left: auto;
     margin-right: auto;
+}
+
+.fade-in-image {
+    animation: fadeIn 3s;
 }
 
