@@ -26,12 +26,12 @@
 /* Navbar logo */
 .nav-font-thin {
     font-family: 'Raleway', sans-serif;
-    color: #578C9F;
+    color: #7C4FCF;
 }
 
 /* Container */
 .container {
-   max-width: 50% !important;
+ max-width: 50% !important;
 }
 
 /* Navbar right buttons */
@@ -53,10 +53,21 @@ body {
 }
 
 /* Center home body */
-.div-home{
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.div-home {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-width: 650px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Center web icon */
+.div-web-icon {
+  padding-top: 185px;
+  display: flex !important;
+  justify-content: center !important;
 }
