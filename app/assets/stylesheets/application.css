@@ -48,6 +48,14 @@ body {
   flex-direction: column;
 }
 
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 15px;
+  color: gray;
+}
+
 .container {
     max-width: 1140px !important;
 }
@@ -197,17 +205,21 @@ hr {
 }
 
 .fly:hover {
-    margin-top: -15px;
+    margin-top: -10px;
 }
 
 .fly {
     transition: margin 0.2s ease-in-out; // Add the transition
 }
 
-footer {
-  margin-top: auto;
-  text-align: center;
-  padding-bottom: 2rem;
-  font-size: 15px;
-  color: gray;
+.card-hghlght {
+  pointer-events: auto;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.card-hghlght:hover {
+  opacity: 1;
+  background-color: #FDFBFF;
+  transform: scale(1.07);
 }
