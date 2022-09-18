@@ -31,18 +31,18 @@
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto" style="font-size: 15px;">
-          <li class="nav-item ms-4">
+      <div class="collapse navbar-collapse navbar-align">
+        <ul class="navbar-nav">
+          <li class="nav-item ms-4 <%= is_active?(home_path) %>">
             <a class=""><%= link_to "HOME", home_path, :class => "nav-link nav-font-color" %></a>
           </li>
-          <li class="nav-item ms-4">
+          <li class="nav-item ms-4 <%= is_active?(about_path) %>">
             <a class=""><%= link_to "ABOUT", about_path, :class => "nav-link nav-font-color" %></a>
           </li>
-          <li class="nav-item ms-4">
+          <li class="nav-item ms-4 <%= is_active?(portfolio_path) %>">
             <a class=""><%= link_to "PORTFOLIO", portfolio_path, :class => "nav-link nav-font-color" %></a>
           </li>
-          <li class="nav-item ms-4">
+          <li class="nav-item ms-4 <%= is_active?(contact_path) %>">
             <a class=""><%= link_to "CONTACT", contact_path, :class => "nav-link nav-font-color" %></a>
           </li>
         </ul>

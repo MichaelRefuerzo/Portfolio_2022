@@ -78,6 +78,12 @@ footer {
     color: #578C9F !important;
 }
 
+.navbar-align {
+    font-size: 15px; 
+    display: flex; 
+    justify-content: flex-end;
+}
+
 /* HR Line */
 hr {
     color: #578C9F !important;
@@ -222,4 +228,9 @@ hr {
   opacity: 1;
   background-color: #FDFBFF;
   transform: scale(1.07);
+}
+
+/* Nav link active */
+.active {
+  font-weight: bold;
 }
