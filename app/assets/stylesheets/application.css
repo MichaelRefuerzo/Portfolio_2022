@@ -151,11 +151,11 @@ hr {
 }
 
 .fade-in-image {
-    animation: fadeIn 3s;
+    animation: fadeIn 2s;
 }
 
 .fade-in-top {
-    animation: fadeInTop 3s;
+    animation: fadeInTop 2s;
 }
 
 /* fade in top */
@@ -300,10 +300,11 @@ hr {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
   font-family: 'Nunito', sans-serif;
-
+  padding-top: 30px;
+  grid-gap: 80px;
 }
 
 .about-font{
