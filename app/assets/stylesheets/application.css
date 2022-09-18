@@ -17,6 +17,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
+@media screen and (max-width:990px) {
+  .container, .education-card-column, .div-home-column { flex-wrap: wrap; gap: 40px;  }
+  .item:first-child { flex-basis: 100%; }
+}
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -91,6 +95,7 @@ hr {
 
 .div-home-column {
     display: flex;
+    align-content: center;
     justify-content: center;
 }
 
@@ -108,7 +113,6 @@ hr {
 
 /* Center web icon */
 .div-web-icon {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -141,7 +145,7 @@ hr {
 
 .education-card-column {
     display: flex;
-    justify-content: center !important;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -169,7 +173,7 @@ hr {
 
 /* about page height */
 .about-height {
-    height: 60vh;
+    padding-top: 10%;
     margin-top: auto;
 }
 

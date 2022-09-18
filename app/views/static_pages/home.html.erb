@@ -1,5 +1,5 @@
 <!doctype html>
-  <html lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +8,11 @@
   </head>
 
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <div class="div-home-column fade-in-image">
-      <%= image_tag "web-icon.png", class: "div-web-icon" %>
+      <%= image_tag "web-icon.png", class: "div-web-icon div-home-column" %>
       <div class="div-home">
-        <h1><span>Hi, I'm</span> <span style="color: #7C4FCF !important;">CHAEL</span></h1>
-          <p>I am a fresh graduate of <span style="color: #7C4FCF !important;">Bachelor of Science in Computer Science.</span> My hobbies are designing, playing video games, and learning web development.</p>
+        <h1><span>Hi, I'm</span> <span style="color: #7C4FCF">CHAEL</span></h1>
+        <p>I am a fresh graduate of <span style="color: #7C4FCF">Bachelor of Science in Computer Science.</span> My hobbies are designing, playing video games, and learning web development.</p>
         <div class="div">
           <%= link_to "ABOUT CHAEL", about_path , :class => "btn btn-outline-dark div-home-buttons" %>
           <%= link_to "CONTACT", contact_path , :class => "btn btn-dark ms-2 div-home-buttons" %>
