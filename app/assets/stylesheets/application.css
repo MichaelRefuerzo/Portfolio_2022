@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 @media screen and (max-width:990px) {
-  .container, .education-card-column, .div-home-column { flex-wrap: wrap; gap: 40px;  }
+  .container, .education-card-column, .card-column-image, .div-home-column, .card-contacts, .skills-icons, .project-container { flex-wrap: wrap; justify-content: center; gap: 40px; align-content: center; flex-direction: column; }
   .item:first-child { flex-basis: 100%; }
 }
 
@@ -187,10 +187,6 @@ hr {
     user-select: none;
 }
 
-.skills .container {
-  padding: 6rem 0;
-}
-
 .skills-icons {
   list-style-type: none;
   display: flex;
@@ -292,10 +288,10 @@ hr {
   font-weight: bold;
 }
 
-.container {
+/*.container {
     flex-wrap: wrap;
 }
-
+*/
 .project-container {
   list-style-type: none;
   display: flex;
