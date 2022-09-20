@@ -18,7 +18,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 @media screen and (max-width:990px) {
-  .container, .education-card-column, .card-column-image, .div-home-column, .card-contacts, .skills-icons, .project-container { flex-wrap: wrap; justify-content: center; gap: 40px; align-content: center; flex-direction: column; }
+  .container, .education-card-column, .card-column-image, .div-home-column, .card-contacts, .skills-icons, .project-container, .card-hghlght { flex-wrap: wrap; justify-content: center; gap: 40px; align-content: center; flex-direction: column; }
+  .project-buttons { margin-top: 1rem; }
   .item:first-child { flex-basis: 100%; }
 }
 
@@ -275,6 +276,8 @@ hr {
   pointer-events: auto;
   transform: scale(1);
   transition: all 0.4s;
+  width: 60%;
+  height: auto;
 }
 
 .card-hghlght:hover {
@@ -296,10 +299,10 @@ hr {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   font-family: 'Nunito', sans-serif;
-  padding-top: 30px;
+  padding-top: 50px;
   grid-gap: 80px;
 }
 
